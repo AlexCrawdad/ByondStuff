@@ -1,0 +1,114 @@
+mob
+	var
+		hbtc_times=0
+		hbtc_timer=360
+		in_hbtc=0
+		hbtctraining=0
+		tmp
+			leaving=0
+			hbtcentering=0
+	proc
+		HBTC_Countdown()
+			if(z==7)
+				hbtc_timer-=1
+				if(hbtc_timer<=0)
+					loc=locate(19,194,5)
+					it_lock=0
+					it_blocked=0
+					grav=0
+					in_hbtc=0
+					safe=0
+					hbtc_timer=120
+					src<<"Your time in the HBTC has expired."
+					return
+				spawn(600)if(src)HBTC_Countdown()
+turf
+	Gravity
+		HBTC
+			Entered(mob/PC/M)
+				if(istype(M,/mob/PC))
+					var/strrand=rand(10,20)
+					var/defrand=rand(10,20)
+					M.exp+=rand(10,90)
+					M.strength+=strrand
+					M.strength_max+=strrand
+					M.defence+=defrand
+					M.defence_max+=defrand
+					M.powerlevel-=strrand*5000
+					M.stamina+=rand(0.4,2)
+					M.expbuff=1
+					M.safe=1
+					M.Level_Up()
+					M.GRAVITYDeath()
+			hbtcturf=1
+		SUB
+			Entered(mob/PC/M)
+				if(istype(M,/mob/PC))
+					var/strrand=rand(30,40)
+					var/defrand=rand(30,20)
+					M.exp+=rand(10,150)
+					M.strength+=strrand
+					M.strength_max+=strrand
+					M.defence+=defrand
+					M.defence_max+=defrand
+					M.powerlevel-=strrand*6000
+					M.stamina+=rand(0.6,3)
+					M.expbuff=1
+					M.safe=1
+					M.Level_Up()
+					M.GRAVITYDeath()
+	Passages
+		HBTC
+			Entrance
+				Enter(mob/PC/M)
+					if(istype(M,/mob/PC))
+						for(var/obj/O in M)
+							if(O.dball)
+								M<<"You can't bring the Dragonballs in here."
+								return
+						if(M.fused||M.hbtcentering)return
+						M.hbtcentering=1
+						if(M.hbtc_times>6)
+							M<<"You've used all of hbtc entries up!"
+							M.hbtcentering=0
+							return
+						if(M.hbtc_times<5)
+							switch(input("Are you sure you want to enter HBTC?")in list("Yes","Never Mind"))
+								if("Never Mind")
+									M.hbtcentering=0
+									return
+								else
+									if(M.chargingfield||M.gravityfieldon||M.doing)
+										M<<"You're doing something!"
+										M.hbtcentering=0
+										return
+									M.loc=locate(187,394,7)
+									M.it_lock=1
+									M.it_blocked=1
+									M.grav=0
+									M.hbtcentering=0
+									M.hbtc_times+=1
+									M.in_hbtc=1
+									M.expbuff=1
+									M.hbtc_timer=360
+									M.safe=1
+									spawn(1)M.HBTC_Countdown()
+				hbtcturf=1
+			Exit
+				Enter(var/mob/PC/M)
+					if(istype(M,/mob/PC))
+						if(M.leaving)return
+						M.leaving=1
+						switch(input("Are you sure you want to leave HBTC?")in list("Yes","Never Mind"))
+							if("Never Mind")
+								M.leaving=0
+								return
+							if("Yes")
+								M.loc=locate(19,194,5)
+								M.it_lock=0
+								M.it_blocked=0
+								M.grav=0
+								M.in_hbtc=0
+								M.leaving=0
+								M.hbtc_timer=360
+								M.safe=0

@@ -1,0 +1,49 @@
+turf/GW
+	icon = 'Gravity Well.dmi'
+	pull
+		density = 0
+		icon_state = "gravity pull"
+	gravity
+		density=0
+		icon_state="gravity"
+		gravturf=1
+	gravitykaio
+		density=0
+		icon_state="gravitykaio"
+		gravturf=1
+	A1
+		density=1
+		icon_state="1"
+	A2
+		density=1
+		icon_state="2"
+	A3
+		density=1
+		icon_state="3"
+	A4
+		density=1
+		icon_state="4"
+	A5
+		density=1
+		icon_state="5"
+	A6
+		density=1
+		icon_state="6"
+	A7
+		density=1
+		icon_state="7"
+	A8
+		density=1
+		icon_state="8"
+	A9
+		density=1
+		icon_state="9"
+	A10
+		density=1
+		icon_state="10"
+	A11
+		density=1
+		icon_state="11"
+	A12
+		density=1
+		icon_state="12"

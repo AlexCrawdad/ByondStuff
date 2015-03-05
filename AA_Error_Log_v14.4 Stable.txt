@@ -1,0 +1,459 @@
+Started up at: Fri Dec 05 10:44:57 2014
+Fri Dec 05 12:29:49 2014
+runtime error: bad icon operation
+proc name: Blend (/icon/proc/Blend)
+  usr: Etfgb (/mob/PC)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Blend(null, null, 1, 1)
+Etfgb (/mob/PC): Skill Gain()
+Etfgb (/mob/PC): Level Up()
+World opened on network port 50302.
+Started up at: Fri Dec 05 12:36:44 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 12:45:16 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 12:46:59 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 12:50:24 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 12:52:06 2014
+Fri Dec 05 17:49:14 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:49:04 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:54:11 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:55:02 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:55:02 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:55:53 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:56:44 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:58:27 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 17:59:18 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 18:01:00 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 18:02:43 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 18:04:25 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 18:20:38 2014
+World opened on network port 50302.
+Started up at: Fri Dec 05 18:36:00 2014
+Sat Dec 06 12:08:49 2014
+World opened on network port 50302.
+Started up at: Sun Dec 07 17:52:28 2014
+World opened on network port 50303.
+Started up at: Sun Dec 07 17:55:02 2014
+World opened on network port 50303.
+Started up at: Sun Dec 07 18:11:15 2014
+World opened on network port 50303.
+Started up at: Sun Dec 07 18:12:06 2014
+World opened on network port 50303.
+Started up at: Sun Dec 07 18:15:31 2014
+Mon Dec 08 15:59:15 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 15:59:24 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 16:14:46 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 16:48:03 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 16:50:36 2014
+Mon Dec 08 20:12:06 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 20:12:00 2014
+runtime error: bad icon operation
+proc name: Blend (/icon/proc/Blend)
+  usr: Alex (/mob/PC)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Blend(null, null, 1, 1)
+Alex (/mob/PC): Skill Gain()
+Alex (/mob/PC): Level Up()
+Mon Dec 08 23:40:34 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 23:40:12 2014
+World opened on network port 50303.
+Started up at: Mon Dec 08 23:44:28 2014
+Tue Dec 09 12:24:32 2014
+World opened on network port 50303.
+Started up at: Tue Dec 09 12:24:48 2014
+Tue Dec 09 15:45:15 2014
+World opened on network port 50303.
+Started up at: Tue Dec 09 15:45:20 2014
+World opened on network port 50303.
+Started up at: Tue Dec 09 15:47:02 2014
+Wed Dec 10 02:33:50 2014
+World opened on network port 50303.
+Started up at: Wed Dec 10 02:33:52 2014
+World opened on network port 50303.
+Started up at: Wed Dec 10 02:34:43 2014
+World opened on network port 50303.
+Started up at: Wed Dec 10 02:51:47 2014
+Wed Dec 10 13:39:45 2014
+World opened on network port 50303.
+Started up at: Wed Dec 10 13:39:28 2014
+Thu Dec 11 11:50:18 2014
+runtime error: Maximum recursion level reached (perhaps there is an infinite loop)
+To avoid this safety check, set world.loop_checks=0.
+proc name: SERVER AD (/proc/SERVER_AD)
+  usr: null
+  src: null
+  call stack:
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+...
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+: New()
+Tue Dec 16 02:56:31 2014
+World opened on network port 50303.
+Started up at: Tue Dec 16 02:56:54 2014
+Wed Dec 17 01:07:44 2014
+runtime error: Maximum recursion level reached (perhaps there is an infinite loop)
+To avoid this safety check, set world.loop_checks=0.
+proc name: SERVER AD (/proc/SERVER_AD)
+  usr: null
+  src: null
+  call stack:
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+...
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+: New()
+Started up at: Sat Dec 20 22:41:36 2014
+World opened on network port 50341.
+Started up at: Sat Dec 20 22:41:36 2014
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Gogeta2222 (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=21;icon-y=14;left=1;scr...")
+Sun Dec 21 00:13:52 2014
+World opened on network port 50341.
+Started up at: Sun Dec 21 00:13:45 2014
+Mon Dec 22 13:33:04 2014
+World opened on network port 50341.
+Started up at: Mon Dec 22 13:32:54 2014
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+Tue Dec 23 01:37:47 2014
+World opened on network port 50341.
+Started up at: Tue Dec 23 01:37:23 2014
+Tue Dec 23 02:48:08 2014
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+Tue Dec 23 23:48:34 2014
+runtime error: Maximum recursion level reached (perhaps there is an infinite loop)
+To avoid this safety check, set world.loop_checks=0.
+proc name: SERVER AD (/proc/SERVER_AD)
+  usr: null
+  src: null
+  call stack:
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+...
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+SERVER AD()
+: New()
+World opened on network port 50341.
+Started up at: Wed Dec 24 00:01:23 2014
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+World opened on network port 50341.
+Started up at: Wed Dec 24 00:03:05 2014
+World opened on network port 50341.
+Started up at: Wed Dec 24 00:03:56 2014
+World opened on network port 50341.
+Started up at: Wed Dec 24 00:04:48 2014
+World opened on network port 50341.
+Started up at: Wed Dec 24 00:15:02 2014
+World opened on network port 50341.
+Started up at: Wed Dec 24 00:18:27 2014
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+runtime error: Cannot read 0.dir
+proc name: Enter (/turf/Floors/Stairsjump/Enter)
+  source file: Floors.dm,272
+  usr: 0
+  src:  (169,193,1) (/turf/Floors/Stairsjump)
+  call stack:
+ (169,193,1) (/turf/Floors/Stairsjump): Enter(FakeMoon (/obj/Tech/FakeMoon), Island Edge 005 (169,192,1) (/turf/Earth/Island_Edge_005))
+FakeMoon (/obj/Tech/FakeMoon): New()
+Wed Dec 24 13:56:38 2014
+World opened on network port 50301.

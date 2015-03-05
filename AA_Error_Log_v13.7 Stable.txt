@@ -1,0 +1,9 @@
+Started up at: Wed Nov 26 10:55:18 2014
+Started up at: Thu Nov 27 02:37:23 2014
+runtime error: cannot append to list
+proc name: Talk (/mob/NPC/Sub_Shop_Keeper/verb/Talk)
+  source file: SubscriberShopkeeper.dm,24
+  usr: Veggie (/mob/PC)
+  src: {NPC}Subscriber Guy (/mob/NPC/Sub_Shop_Keeper)
+  call stack:
+{NPC}Subscriber Guy (/mob/NPC/Sub_Shop_Keeper): Talk()

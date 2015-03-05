@@ -1,0 +1,132 @@
+Started up at: Wed Nov 19 00:02:24 2014
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Sempaialexeo (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=11;icon-y=18;left=1;scr...")
+World opened on network port 50304.
+Started up at: Wed Nov 19 00:07:31 2014
+Wed Nov 19 01:13:27 2014
+World opened on network port 50304.
+Started up at: Wed Nov 19 01:13:13 2014
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Rebel (/mob/Monster/PlanetZRebel))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Dragon (/mob/Monster/Dragon))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Dragon (/mob/Monster/Dragon))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Dragon (/mob/Monster/Dragon))
+runtime error: Cannot read null.address
+proc name: Life Drain (/obj/Technique/LifeAbsorb/verb/Life_Drain)
+  source file: Android Absorb.dm,25
+  usr: Aregb (/mob/PC)
+  src: LifeAbsorb (/obj/Technique/LifeAbsorb)
+  call stack:
+LifeAbsorb (/obj/Technique/LifeAbsorb): Life Drain({NPC}Dragon (/mob/Monster/Dragon))
+World opened on network port 50304.
+Started up at: Wed Nov 19 01:59:18 2014
+runtime error: bad icon operation
+proc name: Blend (/icon/proc/Blend)
+  usr: Asdfasdfa (/mob/PC)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Blend(null, null, 1, 1)
+Asdfasdfa (/mob/PC): Skill Gain()
+Asdfasdfa (/mob/PC): Level Up()
+Wed Nov 19 02:17:52 2014
+World opened on network port 50304.
+Started up at: Wed Nov 19 02:18:04 2014
+runtime error: bad icon operation
+proc name: Blend (/icon/proc/Blend)
+  usr: Asdfasdf (/mob/PC)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Blend(null, null, 1, 1)
+Asdfasdf (/mob/PC): Skill Gain()
+Asdfasdf (/mob/PC): Level Up()
+World opened on network port 50304.
+Started up at: Wed Nov 19 02:25:45 2014
+runtime error: bad icon operation
+proc name: Blend (/icon/proc/Blend)
+  usr: Asdfasdfasdf (/mob/PC)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Blend(null, null, 1, 1)
+Asdfasdfasdf (/mob/PC): Skill Gain()
+Asdfasdfasdf (/mob/PC): Level Up()
+World opened on network port 50304.
+Started up at: Wed Nov 19 02:39:24 2014
+Started up at: Wed Nov 26 10:16:54 2014
+Started up at: Wed Nov 26 10:17:45 2014

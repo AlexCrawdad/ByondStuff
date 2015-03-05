@@ -1,0 +1,14 @@
+Edit: Target: Gogetah - Variable: level - Before edit: 10484 - After edit: 50000
+Edit: Target: Gogetah - Variable: powerlevelrebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Gogetah - Variable: strengthrebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Gogetah - Variable: EXPrebirthgain - Before edit: 2 - After edit: 1000
+Edit: Target: Gogetah - Variable: EXPrebirthgain - Before edit: 1000 - After edit: 100
+Edit: Target: Gogetah - Variable: kirebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Gogetah - Variable: kidefenserebirthgain - Before edit: 2 - After edit: 1000
+Edit: Target: Gogetah - Variable: kidefenserebirthgain - Before edit: 1000 - After edit: 100
+Edit: Target: Gogetah - Variable: defenserebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Gogetah - Variable: staminarebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Gogetah - Variable: PLMastery - Before edit: 1.0021 - After edit: 4
+Edit: Target: Gogetah - Variable: STRMastery - Before edit: 1.0018 - After edit: 4
+Edit: Target: Gogetah - Variable: DEFMastery - Before edit: 1.0016 - After edit: 4
+Edit: Target: Gogetah - Variable: KIMastery - Before edit: 1.0013 - After edit: 4

@@ -1,0 +1,730 @@
+mob/var/image/TI
+mob/var/tmp/train
+mob/var/tmp/sscorrect=0
+mob/var/tmp/ssexp=1
+mob/var/direction
+mob/var/tmp/response
+mob/var/amount=0
+mob/var/L[5]
+mob/var/D[5]
+mob/var/position=0
+mob/var/image/AU1
+mob/var/image/AU2
+mob/var/image/AU3
+mob/var/image/AU4
+mob/var/image/AU5
+mob/var/image/AR1
+mob/var/image/AR2
+mob/var/image/AR3
+mob/var/image/AR4
+mob/var/image/AR5
+mob/var/image/AL1
+mob/var/image/AL2
+mob/var/image/AL3
+mob/var/image/AL4
+mob/var/image/AL5
+mob/var/image/AD1
+mob/var/image/AD2
+mob/var/image/AD3
+mob/var/image/AD4
+mob/var/image/AD5
+mob/var/image/A1
+mob/var/image/A2
+mob/var/image/A3
+mob/var/image/LG
+mob/var/image/RG
+mob/var/image/UG
+mob/var/image/DG
+mob/var/tmp
+	COMBOLEFT=0
+	COMBOUP=0
+	COMBORIGHT=0
+	COMBODOWN=0
+var/IME=1
+mob/proc
+	MacroShadowReset()
+		winset(src,"macro.MOVEWEST","command=MACROSTOP")
+		winset(src,"macro.MOVENORTH","command=MACROSTOP")
+		winset(src,"macro.MOVESOUTH","command=MACROSTOP")
+		winset(src,"macro.MOVEEAST","command=MACROSTOP")
+		winset(src,"macro.STOPNORTH","command=Training-Up")
+		winset(src,"macro.NORTH","command=MACROSTOP")
+		winset(src,"macro.STOPSOUTH","command=Training-Down")
+		winset(src,"macro.SOUTH","command=MACROSTOP")
+		winset(src,"macro.STOPEAST","command=Training-Right")
+		winset(src,"macro.EAST","command=MACROSTOP")
+		winset(src,"macro.STOPWEST","command=Training-Left")
+		winset(src,"macro.WEST","command=MACROSTOP")
+		return
+	MacroFocusReset()
+		winset(src,"macro.MOVEWEST","command=MACROSTOP")
+		winset(src,"macro.MOVENORTH","command=MACROSTOP")
+		winset(src,"macro.MOVESOUTH","command=MACROSTOP")
+		winset(src,"macro.MOVEEAST","command=MACROSTOP")
+		winset(src,"macro.STOPNORTH","command=FTTraining-Up")
+		winset(src,"macro.NORTH","command=MACROSTOP")
+		winset(src,"macro.STOPSOUTH","command=FTTraining-Down")
+		winset(src,"macro.SOUTH","command=MACROSTOP")
+		winset(src,"macro.STOPEAST","command=FTTraining-Right")
+		winset(src,"macro.EAST","command=MACROSTOP")
+		winset(src,"macro.STOPWEST","command=FTTraining-Left")
+		winset(src,"macro.WEST","command=MACROSTOP")
+		return
+	MacroComboReset()
+		winset(src,"macro.MOVEWEST","command=MACROSTOP")
+		winset(src,"macro.MOVENORTH","command=MACROSTOP")
+		winset(src,"macro.MOVESOUTH","command=MACROSTOP")
+		winset(src,"macro.MOVEEAST","command=MACROSTOP")
+		winset(src,"macro.STOPNORTH","command=COMBONORTH")
+		winset(src,"macro.NORTH","command=MACROSTOP")
+		winset(src,"macro.STOPSOUTH","command=COMBOSOUTH")
+		winset(src,"macro.SOUTH","command=MACROSTOP")
+		winset(src,"macro.STOPEAST","command=COMBOEAST")
+		winset(src,"macro.EAST","command=MACROSTOP")
+		winset(src,"macro.STOPWEST","command=COMBOWEST")
+		winset(src,"macro.WEST","command=MACROSTOP")
+		return
+	MacroDefaultReset()
+		if(!IME)
+			winset(src,"macro.MOVEWEST","command=.west")
+			winset(src,"macro.MOVENORTH","command=.north")
+			winset(src,"macro.MOVESOUTH","command=.south")
+			winset(src,"macro.MOVEEAST","command=.east")
+			winset(src,"macro.STOPNORTH","command=MACROSTOP")
+			winset(src,"macro.NORTH","command=.north")
+			winset(src,"macro.STOPSOUTH","command=MACROSTOP")
+			winset(src,"macro.SOUTH","command=.south")
+			winset(src,"macro.STOPEAST","command=MACROSTOP")
+			winset(src,"macro.EAST","command=.east")
+			winset(src,"macro.STOPWEST","command=MACROSTOP")
+			winset(src,"macro.WEST","command=.west")
+			return
+		winset(src,"macro.MOVEWEST","command=MoveWest")
+		winset(src,"macro.MOVENORTH","command=MoveNorth")
+		winset(src,"macro.MOVESOUTH","command=MoveSouth")
+		winset(src,"macro.MOVEEAST","command=MoveEast")
+		winset(src,"macro.STOPNORTH","command=StopNorth")
+		winset(src,"macro.NORTH","command=.north")
+		winset(src,"macro.STOPSOUTH","command=StopSouth")
+		winset(src,"macro.SOUTH","command=.south")
+		winset(src,"macro.STOPEAST","command=StopEast")
+		winset(src,"macro.EAST","command=.east")
+		winset(src,"macro.STOPWEST","command=StopWest")
+		winset(src,"macro.WEST","command=.west")
+		return
+mob/PC
+	verb
+		COMBOWEST()
+			set hidden=1
+			COMBOLEFT=1
+			COMBOUP=0
+			COMBORIGHT=0
+			COMBODOWN=0
+			MacroDefaultReset()
+			return
+		COMBONORTH()
+			set hidden=1
+			COMBOLEFT=0
+			COMBOUP=1
+			COMBORIGHT=0
+			COMBODOWN=0
+			MacroDefaultReset()
+			return
+		COMBOEAST()
+			set hidden=1
+			COMBOLEFT=0
+			COMBOUP=0
+			COMBORIGHT=1
+			COMBODOWN=0
+			MacroDefaultReset()
+			return
+		COMBOSOUTH()
+			set hidden=1
+			COMBOLEFT=0
+			COMBOUP=0
+			COMBORIGHT=0
+			COMBODOWN=1
+			MacroDefaultReset()
+			return
+		MACROSTOP()
+			set hidden=1
+			return
+		Shadow_Spar()
+			set category="Training"
+			//RegSpamGuard()
+			if(commandlocked)return
+			if(boxing||rest||dualtrain||doing||ft_using||train||jailed)return
+			if(waiting)
+				usr<<"You must wait before you can train again!"
+				return
+			if(stamina>=stamina_max)
+				usr<<"You are too drained to train!"
+				return
+			MacroShadowReset()
+			train=1
+			position=0
+			A1=image('Arrow.dmi',usr,icon_state="l")
+			A1.pixel_y=32
+			A1.pixel_x=-32
+			A1.layer=1005
+			usr<<A1
+			A2=image('Arrow.dmi',usr,icon_state="m")
+			A2.pixel_y=32
+			A2.layer=1005
+			usr<<A2
+			A3=image('Arrow.dmi',usr,icon_state="r")
+			A3.pixel_y=32
+			A3.pixel_x=32
+			A3.layer=1005
+			usr<<A3
+			doing=1
+			icon_state="spar fury"
+			usr<<"You begin to shadow spar! Push the correct arrow keys to train."
+			frozen=1
+			sscorrect=0
+			var/mob/ShadowSparClone/Spar_Clone/SC=new
+			SC.owner=usr
+			SC.loc=loc
+			SC.icon=icon
+			SC.icon_state="spar fury"
+			SC.overlays+=overlays
+			if(dir==NORTHEAST||dir==EAST||dir==SOUTHEAST||dir==SOUTH)
+				SC.x+=1
+				if(x==500)SC.loc=loc
+				SC.dir=WEST
+			if(dir==NORTHWEST||dir==WEST||dir==SOUTHWEST||dir==NORTH)
+				SC.x-=1
+				if(x==1)SC.loc=loc
+				SC.dir=EAST
+			Training()
+		Training_Down()
+			set hidden=1
+			//RegSpamGuard()
+			if(commandlocked)return
+			if(position==1)
+				if(D[1]=="Down")
+					position++
+					Shadow_Spar2()
+					client.images-=AD1
+					DG=image('Arrow.dmi',usr,icon_state="down_gone")
+					DG.pixel_y=32
+					DG.pixel_x=-32
+					DG.layer=1005
+					usr<<DG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==2)
+				if(D[2]=="Down")
+					position++
+					Shadow_Spar2()
+					client.images-=AD2
+					DG=image('Arrow.dmi',usr,icon_state="down_gone")
+					DG.pixel_y=32
+					DG.pixel_x=-16
+					DG.layer=1005
+					usr<<DG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==3)
+				if(D[3]=="Down")
+					position++
+					Shadow_Spar2()
+					client.images-=AD3
+					DG=image('Arrow.dmi',usr,icon_state="down_gone")
+					DG.pixel_y=32
+					DG.pixel_x=0
+					DG.layer=1005
+					usr<<DG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==4)
+				if(D[4]=="Down")
+					position++
+					Shadow_Spar2()
+					client.images-=AD4
+					DG=image('Arrow.dmi',usr,icon_state="down_gone")
+					DG.pixel_y=32
+					DG.pixel_x=16
+					DG.layer=1005
+					usr<<DG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==5)
+				if(D[5]=="Down")
+					Shadow_Spar2()
+					DG=image('Arrow.dmi',usr,icon_state="down_gone")
+					DG.pixel_y=32
+					DG.pixel_x=32
+					DG.layer=1005
+					usr<<DG
+					Training()
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+		Training_Left()
+			set hidden=1
+			//RegSpamGuard()
+			if(commandlocked)return
+			if(position==1)
+				if(D[1]=="Left")
+					position++
+					Shadow_Spar2()
+					client.images-=AL1
+					LG=image('Arrow.dmi',usr,icon_state="left_gone")
+					LG.pixel_y=32
+					LG.pixel_x=-32
+					LG.layer=1005
+					usr<<LG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==2)
+				if(D[2]=="Left")
+					position++
+					Shadow_Spar2()
+					client.images-=AL2
+					LG=image('Arrow.dmi',usr,icon_state="left_gone")
+					LG.pixel_y=32
+					LG.pixel_x=-16
+					LG.layer=1005
+					usr<<LG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==3)
+				if(D[3]=="Left")
+					position++
+					Shadow_Spar2()
+					client.images-=AL3
+					LG=image('Arrow.dmi',usr,icon_state="left_gone")
+					LG.pixel_y=32
+					LG.pixel_x=0
+					LG.layer=1005
+					usr<<LG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==4)
+				if(D[4]=="Left")
+					position++
+					Shadow_Spar2()
+					client.images-=AL4
+					LG=image('Arrow.dmi',usr,icon_state="left_gone")
+					LG.pixel_y=32
+					LG.pixel_x=16
+					LG.layer=1005
+					usr<<LG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==5)
+				if(D[5]=="Left")
+					Shadow_Spar2()
+					LG=image('Arrow.dmi',usr,icon_state="left_gone")
+					LG.pixel_y=32
+					LG.pixel_x=32
+					LG.layer=1005
+					usr<<LG
+					Training()
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+		Training_Up()
+			set hidden=1
+			//RegSpamGuard()
+			if(commandlocked)return
+			if(position==1)
+				if(D[1]=="Up")
+					position++
+					Shadow_Spar2()
+					client.images-=AU1
+					UG=image('Arrow.dmi',usr,icon_state="up_gone")
+					UG.pixel_y=32
+					UG.pixel_x=-32
+					UG.layer=1005
+					usr<<UG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==2)
+				if(D[2]=="Up")
+					position++
+					Shadow_Spar2()
+					client.images-=AU2
+					UG=image('Arrow.dmi',usr,icon_state="up_gone")
+					UG.pixel_y=32
+					UG.pixel_x=-16
+					UG.layer=1005
+					usr<<UG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==3)
+				if(D[3]=="Up")
+					position++
+					Shadow_Spar2()
+					client.images-=AU3
+					UG=image('Arrow.dmi',usr,icon_state="up_gone")
+					UG.pixel_y=32
+					UG.pixel_x=0
+					UG.layer=1005
+					usr<<UG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==4)
+				if(D[4]=="Up")
+					position++
+					Shadow_Spar2()
+					client.images-=AU4
+					UG=image('Arrow.dmi',usr,icon_state="up_gone")
+					UG.pixel_y=32
+					UG.pixel_x=16
+					UG.layer=1005
+					usr<<UG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==5)
+				if(D[5]=="Up")
+					Shadow_Spar2()
+					UG=image('Arrow.dmi',usr,icon_state="up_gone")
+					UG.pixel_y=32
+					UG.pixel_x=32
+					UG.layer=1005
+					usr<<UG
+					Training()
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+		Training_Right()
+			set hidden=1
+			//RegSpamGuard()
+			if(commandlocked)return
+			if(position==1)
+				if(D[1]=="Right")
+					position++
+					Shadow_Spar2()
+					client.images-=AR1
+					RG=image('Arrow.dmi',usr,icon_state="right_gone")
+					RG.pixel_y=32
+					RG.pixel_x=-32
+					RG.layer=1005
+					usr<<RG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==2)
+				if(D[2]=="Right")
+					position++
+					Shadow_Spar2()
+					client.images-=AR2
+					RG=image('Arrow.dmi',usr,icon_state="right_gone")
+					RG.pixel_y=32
+					RG.pixel_x=-16
+					RG.layer=1005
+					usr<<RG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==3)
+				if(D[3]=="Right")
+					position++
+					Shadow_Spar2()
+					client.images-=AR3
+					RG=image('Arrow.dmi',usr,icon_state="right_gone")
+					RG.pixel_y=32
+					RG.pixel_x=0
+					RG.layer=1005
+					usr<<RG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==4)
+				if(D[4]=="Right")
+					position++
+					Shadow_Spar2()
+					client.images-=AR4
+					RG=image('Arrow.dmi',usr,icon_state="right_gone")
+					RG.pixel_y=32
+					RG.pixel_x=16
+					RG.layer=1005
+					usr<<RG
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+			else if(position==5)
+				if(D[5]=="Right")
+					Shadow_Spar2()
+					RG=image('Arrow.dmi',usr,icon_state="right_gone")
+					RG.pixel_y=32
+					RG.pixel_x=32
+					RG.layer=1005
+					usr<<RG
+					Training()
+				else
+					usr<<"Incorrect!"
+					UnTraining()
+mob
+	proc
+		UnTraining()
+			train=0
+			position=0
+			doing=0
+			frozen=0
+			sscorrect=0
+			ssexp=1
+			icon_state=""
+			amount=1
+			spawn(3)if(src)client.images=null
+			MacroDefaultReset()
+			for(var/mob/ShadowSparClone/Spar_Clone/SC in world)if(SC.owner==src)del(SC)
+			return
+		Training()
+			var/i
+			amount=1
+			if(position==5)
+				position=1
+				client.images=null
+				A1=image('Arrow.dmi',src,icon_state="l")
+				A1.pixel_y=32
+				A1.pixel_x=-32
+				A1.layer=1005
+				src<<A1
+				A2=image('Arrow.dmi',src,icon_state="m")
+				A2.pixel_y=32
+				A2.layer=1005
+				src<<A2
+				A3=image('Arrow.dmi',src,icon_state="r")
+				A3.pixel_y=32
+				A3.pixel_x=32
+				A3.layer=1005
+				src<<A3
+				sleep(1)
+			else position++
+			for(i=1, i<=L.len, i++)
+				L[i]=rand(1,4)
+				if(amount==1)
+					if(L[i]==1)
+						AU1=image('Arrow.dmi',src,icon_state="up")
+						AU1.pixel_y=32
+						AU1.pixel_x=-32
+						AU1.layer=1005
+						src<<AU1
+						D[i]="Up"
+					else if(L[i]==2)
+						AD1=image('Arrow.dmi',src,icon_state="down")
+						AD1.pixel_y=32
+						AD1.pixel_x=-32
+						AD1.layer=1005
+						src<<AD1
+						D[i]="Down"
+					else if(L[i]==3)
+						AL1=image('Arrow.dmi',src,icon_state="left")
+						AL1.pixel_y=32
+						AL1.pixel_x=-32
+						AL1.layer=1005
+						src<<AL1
+						D[i]="Left"
+					else if(L[i]==4)
+						AR1=image('Arrow.dmi',src,icon_state="right")
+						AR1.pixel_y=32
+						AR1.pixel_x=-32
+						AR1.layer=1005
+						src<<AR1
+						D[i]="Right"
+					amount=2
+				else if(amount==2)
+					if(L[i]==1)
+						AU2=image('Arrow.dmi',src,icon_state="up")
+						AU2.pixel_y=32
+						AU2.pixel_x=-16
+						AU2.layer=1005
+						src<<AU2
+						D[i]="Up"
+					else if(L[i]==2)
+						AD2=image('Arrow.dmi',src,icon_state="down")
+						AD2.pixel_y=32
+						AD2.pixel_x=-16
+						AD2.layer=1005
+						src<<AD2
+						D[i]="Down"
+					else if(L[i]==3)
+						AL2=image('Arrow.dmi',src,icon_state="left")
+						AL2.pixel_y=32
+						AL2.pixel_x=-16
+						AL2.layer=1005
+						src<<AL2
+						D[i]="Left"
+					else if(L[i]==4)
+						AR2=image('Arrow.dmi',src,icon_state="right")
+						AR2.pixel_y=32
+						AR2.pixel_x=-16
+						AR2.layer=1005
+						src<<AR2
+						D[i]="Right"
+					amount=3
+				else if(amount==3)
+					if(L[i]==1)
+						AU3=image('Arrow.dmi',src,icon_state="up")
+						AU3.pixel_y=32
+						AU3.pixel_x=0
+						AU3.layer=1005
+						src<<AU3
+						D[i]="Up"
+					else if(L[i]==2)
+						AD3=image('Arrow.dmi',src,icon_state="down")
+						AD3.pixel_y=32
+						AD3.pixel_x=0
+						AD3.layer=1005
+						src<<AD3
+						D[i]="Down"
+					else if(L[i]==3)
+						AL3=image('Arrow.dmi',src,icon_state="left")
+						AL3.pixel_y=32
+						AL3.pixel_x=0
+						AL3.layer=1005
+						src<<AL3
+						D[i]="Left"
+					else if(L[i]==4)
+						AR3=image('Arrow.dmi',src,icon_state="right")
+						AR3.pixel_y=32
+						AR3.pixel_x=0
+						AR3.layer=1005
+						src<<AR3
+						D[i]="Right"
+					amount=4
+				else if(amount==4)
+					if(L[i]==1)
+						AU4=image('Arrow.dmi',src,icon_state="up")
+						AU4.pixel_y=32
+						AU4.pixel_x=16
+						AU4.layer=1005
+						src<<AU4
+						D[i]="Up"
+					else if(L[i]==2)
+						AD4=image('Arrow.dmi',src,icon_state="down")
+						AD4.pixel_y=32
+						AD4.pixel_x=16
+						AD4.layer=1005
+						src<<AD4
+						D[i]="Down"
+					else if(L[i]==3)
+						AL4=image('Arrow.dmi',src,icon_state="left")
+						AL4.pixel_y=32
+						AL4.pixel_x=16
+						AL4.layer=1005
+						src<<AL4
+						D[i]="Left"
+					else if(L[i]==4)
+						AR4=image('Arrow.dmi',src,icon_state="right")
+						AR4.pixel_y=32
+						AR4.pixel_x=16
+						AR4.layer=1005
+						src<<AR4
+						D[i]="Right"
+					amount=5
+				else if(amount==5)
+					if(L[i]==1)
+						AU5=image('Arrow.dmi',src,icon_state="up")
+						AU5.pixel_y=32
+						AU5.pixel_x=32
+						AU5.layer=1005
+						src<<AU5
+						D[i]="Up"
+					else if(L[i]==2)
+						AD5=image('Arrow.dmi',src,icon_state="down")
+						AD5.pixel_y=32
+						AD5.pixel_x=32
+						AD5.layer=1005
+						src<<AD5
+						D[i]="Down"
+					else if(L[i]==3)
+						AL5=image('Arrow.dmi',src,icon_state="left")
+						AL5.pixel_y=32
+						AL5.pixel_x=32
+						AL5.layer=1005
+						src<<AL5
+						D[i]="Left"
+					else if(L[i]==4)
+						AR5=image('Arrow.dmi',src,icon_state="right")
+						AR5.pixel_y=32
+						AR5.pixel_x=32
+						AR5.layer=1005
+						src<<AR5
+						D[i]="Right"
+					amount=0
+
+mob/proc/Shadow_Spar2()
+	var/exp_bonus=4000
+	if(stamina>=stamina_max)
+		src<<"You feel weak so you stop training!"
+		overlays+='Rest.dmi'
+		UnTraining()
+		return
+	else
+		sscorrect++
+		if(sscorrect>=70&&ssexp<3)
+			if(ssexp==2)ssexp=3
+			if(ssexp==1)ssexp=2
+			src<<"<center>Shadow Spar Multiplier x[ssexp]!</center>"
+			sscorrect=0
+		if(ssexp>1)exp_bonus*=ssexp
+		if(grav_trainer)exp_bonus*=1.4*exphostgain
+		if(gravity_train)exp_bonus*=2.2*exphostgain
+		if(event_exp_on)exp_bonus*=2.2*exphostgain
+		if(expbuff)exp_bonus*=1.7*exphostgain
+		if("exp_buff" in src.buffs)exp_bonus*=1.6*exphostgain
+		if(in_hbtc)exp_bonus*=2.1*exphostgain
+		if(weight>0)exp_bonus*=1.7*exphostgain
+		exp+=exp_bonus
+		sttps++
+		stttps++
+		sptp++
+		if(sttps>=1000)
+			sttps=0
+			var/chance=rand(200,300)
+			if(permtpsboosted)tp+=chance
+			if(tpsboosted)tp+=chance
+			if(TPevent_exp_on)tp+=chance
+			if("TP_buff" in buffs)tp+=chance/2
+			if(weight>0)tp+=chance/2
+			chance*=leveldone/2
+			if(chance<=0)chance=rand(200,300)
+			tp+=chance
+			src<<output("<center><font color=red>Training Points <font color=white>+[applycommas(chance)]","output5")
+		if(stttps>=1500)
+			stttps=0
+			var/chance=rand(200,300)
+			if(permtpsboosted)tp+=chance
+			if(tpsboosted)tp+=chance
+			if(TPevent_exp_on)tp+=chance
+			if("TP_buff" in buffs)tp+=chance/2
+			if(weight>0)tp+=chance/2
+			chance*=leveldone/2
+			if(chance<=0)chance=rand(200,300)
+			tp+=chance
+			src<<output("<center><font color=red>Training Points <font color=white>+[applycommas(chance)]","output5")
+		if(sptp>=60)
+			sptp=0
+			var/chance=rand(500,600)
+			if(permtpsboosted)tp+=chance
+			if(tpsboosted)tp+=chance
+			if(TPevent_exp_on)tp+=chance
+			if("TP_buff" in buffs)tp+=chance/2
+			if(weight>0)tp+=chance/2
+			chance*=leveldone/2
+			tp+=chance
+			src<<output("<center><font color=red>Training Points <font color=white>+[applycommas(chance)]","output5")
+		stamina+=3.7
+		Level_Up()
+		return
+
+mob/ShadowSparClone/Spar_Clone
+	density=0
+	pk=0
+	owner=""

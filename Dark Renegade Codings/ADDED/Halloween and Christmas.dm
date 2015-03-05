@@ -1,0 +1,56 @@
+obj/var/halloweenitem=0
+obj/var/christmasitem=0
+obj/HalloweenStuff
+	icon='Events.dmi'
+	density=1
+	halloweenitem=1
+	Pum1
+		icon_state="pumpkin1"
+	Pum2
+		icon_state="pumpkin2"
+	Pum3
+		icon_state="pumpkin3"
+	Pum4
+		icon_state="pumpkin4"
+obj/ChristmasStuff
+	icon='Christmas.dmi'
+	density=1
+	christmasitem=1
+	SM1
+		icon_state="snowman1"
+	SM2
+		icon_state="snowman2"
+	SM3
+		icon_state="snowman3"
+	SM4
+		icon_state="snowman4"
+	SB1
+		icon_state="Snowy bush"
+	CC1
+		icon_state="cane"
+	CC2
+		icon_state="snowy cane"
+	SP1
+		icon_state="palm1s"
+	SP2
+		icon_state="palm2s"
+	SP3
+		icon_state="palm3s"
+	SP4
+		icon_state="palm4s"
+	SP5
+		icon_state="palm5s"
+	SP6
+		icon_state="palm6s"
+	TT1
+		icon_state="tree1s"
+	TT2
+		icon_state="tree2s"
+	TT3
+		icon_state="tree3s"
+	TT4
+		icon_state="tree4s"
+	TT5
+		icon_state="tree5s"
+	TT6
+		icon_state="tree6s"

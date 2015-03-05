@@ -1,0 +1,88 @@
+Teleported Alex to {NPC}Piccolo.
+Edit: Target: Alex - Variable: cell_kill - Before edit: 0 - After edit: 1
+Edit: Target: Ergfadf - Variable: powerlevel_max - Before edit: 300 - After edit: 1e+022
+Edit: Target: Aser - Variable: race - Before edit: Changeling - After edit: Cooler
+Edit: Target: Aser - Variable: powerlevel_max - Before edit: 300 - After edit: 1e+025
+Edit: Target: Aregb - Variable: powerlevel_max - Before edit: 868.971 - After edit: 1e+022
+Edit: Target: Aregb - Variable: level - Before edit: 171 - After edit: 1e+006
+Edit: Target: Aregb - Variable: level - Before edit: 1 - After edit: 100000
+Edit: Target: Aregb - Variable: level - Before edit: 1 - After edit: 500000
+Edit: Target: Aregb - Variable: level - Before edit: 1 - After edit: 1
+Edit: Target: Aregb - Variable: level - Before edit: 1 - After edit: 100000
+Edit: Target: Aregb - Variable: level - Before edit: 1 - After edit: 100000
+Edit: Target: Kishi Jr - Variable: EXPrebirthgain - Before edit: 1 - After edit: 100
+Edit: Target: Kishi Jr - Variable: EXPrebirthgain - Before edit: 100 - After edit: 100000
+Edit: Target: Etfgb - Variable: powerlevel_max - Before edit: 300 - After edit: 1e+008
+Edit: Target: Etfgb - Variable: powerlevel_max - Before edit: 1e+008 - After edit: 1e+020
+Edit: Target: Etfgb - Variable: level - Before edit: 1 - After edit: 100000
+Edit: Target: Aregb - Variable: powerlevel_max - Before edit: 1.01056e+006 - After edit: 1e+011
+Edit: Target: Aregb - Variable: powerlevel_max - Before edit: 1e+011 - After edit: 1e+034
+Edit: Target: Aregb - Variable: defence_max - Before edit: 598311 - After edit: 1e+032
+Edit: Target: Aregb - Variable: strength_max - Before edit: 564950 - After edit: 1e+028
+Edit: Target: Asdfasdfa - Variable: level - Before edit: 1 - After edit: 90000
+Edit: Target: Asdfasdfa - Variable: powerlevel_max - Before edit: 96664.9 - After edit: 1e+019
+Edit: Target: Asdfasdfa - Variable: ki_max - Before edit: 48594.1 - After edit: 1e+028
+Edit: Target: Asdfasdf - Variable: pvpkills - Before edit: 0 - After edit: 149
+Edit: Target: Asdfasdf - Variable: powerlevel_max - Before edit: 300 - After edit: 1e+037
+Edit: Target: Asdfasdf - Variable: level - Before edit: 121 - After edit: 90000
+Edit: Target: Asdfasdfasdf - Variable: pvpkills - Before edit: 0 - After edit: 149
+Edit: Target: Asdfasdfasdf - Variable: level - Before edit: 1 - After edit: 500000
+Edit: Target: Asdfasdfasdf - Variable: powerlevel_max - Before edit: 300 - After edit: 1e+028
+Teleported Asdfasdfasdf to {Simulation}Goku.
+Edit: Target: Asdfasdfasdf - Variable: level - Before edit: 500000 - After edit: 10000
+Announced 'adfgadsfa
+'.
+Teleported Etfgb to {NPC}Trunks.
+Edit: Target: Etfgb - Variable: level - Before edit: 100000 - After edit: 1
+Edit: Target: Etfgb - Variable: EXPrebirthgain - Before edit: 1 - After edit: 10000
+Edit: Target: Etfgb - Variable: strength_max - Before edit: 231755 - After edit: 1e+021
+Edit: Target: Etfgb - Variable: killed_saibas - Before edit: 5 - After edit: 100
+Edit: Target: Etfgb - Variable: saiba_menace_completed - Before edit: 1 - After edit: 0
+Edit: Target: Asdfasdfasdf - Variable: killed_raditz - Before edit: 0 - After edit: 1
+Edit: Target: Asdfasdfasdf - Variable: killed_saibas - Before edit: 0 - After edit: 7
+Edit: Target: Etfgb - Variable: EXPrebirthgain - Before edit: 10000 - After edit: 100
+Edit: Target: Etfgb - Variable: tp - Before edit: 762419 - After edit: 762419
+Edit: Target: Etfgb - Variable: tp - Before edit: 762419 - After edit: 1e+022
+Edit: Target: Etfgb - Variable: level - Before edit: 57559 - After edit: 9.5e+006
+Edit: Target: Etfgb - Variable: tp - Before edit: 9.7e+021 - After edit: 0
+Edit: Target: Etfgb - Variable: exp - Before edit: 5.77355e+010 - After edit: 0
+Repopped the world.
+Edit: Target: Alex - Variable: train_chromosome - Before edit: 1 - After edit: 0
+Edit: Target: Alex - Variable: legendary_chromosome - Before edit: 0 - After edit: 1
+Edit: Target: Alex - Variable: powerlevel_max - Before edit: 1012.08 - After edit: 1e+023
+Edit: Target: Alex - Variable: exp - Before edit: 200 - After edit: 1e+010
+Teleported Alex to {NPC}Gregory.
+Edit: Target: Alex - Variable: tp - Before edit: 32 - After edit: 500000
+Edit: Target: Alex - Variable: EXPrebirthgain - Before edit: 2 - After edit: 50
+Repopped the world.
+Revived the world.
+Edit: Target: Alex - Variable: race - Before edit: Saiyan - After edit: Human
+Edit: Target: Etfgb - Variable: level - Before edit: 2.35642e+006 - After edit: 10000
+Edit: Target: Etfgb - Variable: level - Before edit: 10944 - After edit: 1e+007
+Renamed Etfgb to Alex.
+Edit: Target: Alex - Variable: powerlevelrebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Alex - Variable: kirebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Alex - Variable: strengthrebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Alex - Variable: kidefenserebirthgain - Before edit: 2 - After edit: 100
+Edit: Target: Alex - Variable: PLMastery - Before edit: 1.0008 - After edit: 4
+Edit: Target: Alex - Variable: KIMastery - Before edit: 1.0007 - After edit: 4
+Edit: Target: Alex - Variable: STRMastery - Before edit: 1.0006 - After edit: 4
+Edit: Target: Alex - Variable: DEFMastery - Before edit: 1.0006 - After edit: 100
+Edit: Target: Alex - Variable: DEFMastery - Before edit: 100 - After edit: 4
+Teleported Alex to {NPC}Townsman.
+Edit: Target: Alex - Variable: level - Before edit: 378525 - After edit: 1e+007
+Edit: Target: Alex - Variable: powerlevel - Before edit: 1e+006 - After edit: 1.23412e+011
+Edit: Target: Alex - Variable: level - Before edit: 1 - After edit: 1e+007
+Edit: Target: Alex - Variable: level - Before edit: 27921 - After edit: 1e+007
+Edit: Target: Alex - Variable: powerlevel_max - Before edit: 1e+006 - After edit: 1e+024
+Edit: Target: Alex - Variable: race - Before edit: Changeling - After edit: Dragon
+Summoned the Earth Dragonballs.
+Edit: Target: Alex - Variable: form_1 - Before edit: 1 - After edit: 0
+Edit: Target: Alex - Variable: level - Before edit: 5898 - After edit: 1e+008
+Edit: Target: Alex - Variable: powerlevel_max - Before edit: 1e+006 - After edit: 1e+023
+Edit: Target: Alex - Variable: witness_deaths - Before edit: 0 - After edit: 1
+Edit: Target: Alex - Variable: level - Before edit: 1 - After edit: 1e+008
+Edit: Target: Alex - Variable: exp - Before edit: 329750 - After edit: 0
+Edit: Target: Alex - Variable: level - Before edit: 59175 - After edit: 7e+006
+Edit: Target: Alex - Variable: powerlevel_max - Before edit: 1.16392e+008 - After edit: 1e+012
+Edit: Target: Alex - Variable: level - Before edit: 9403 - After edit: 3e+006

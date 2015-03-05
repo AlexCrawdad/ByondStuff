@@ -1,0 +1,10 @@
+mob
+	var
+		ssj_level=0;ssj_exp=0;ssj_tnl=100;form_1_level=0;form_1_exp=0;form_1_tnl=100;upkeep=35;isusingut=0
+	proc
+		SkillsReset()
+			dodge=dodge_max
+			block=block_max
+			reflect=reflect_max
+			critical=critical_max
+			counter=counter_max

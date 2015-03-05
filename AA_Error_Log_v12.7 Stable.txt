@@ -1,0 +1,72 @@
+Started up at: Fri Nov 14 13:48:32 2014
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Vegito9000 (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=14;icon-y=10;left=1;scr...")
+runtime error: cannot append to list
+proc name: Talk (/mob/NPC/Sub_Shop_Keeper/verb/Talk)
+  source file: SubscriberShopkeeper.dm,24
+  usr: Veggie (/mob/PC)
+  src: {NPC}Subscriber Guy (/mob/NPC/Sub_Shop_Keeper)
+  call stack:
+{NPC}Subscriber Guy (/mob/NPC/Sub_Shop_Keeper): Talk()
+Started up at: Mon Nov 17 15:09:10 2014
+Started up at: Mon Nov 17 15:09:10 2014
+Started up at: Mon Nov 17 19:26:01 2014
+Started up at: Tue Nov 18 20:34:11 2014
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Sempaialexeo (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=13;icon-y=9;left=1;scre...")
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Sempaialexeo (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=14;icon-y=5;left=1;scre...")
+World opened on network port 1.
+Started up at: Tue Nov 18 20:57:13 2014
+World opened on network port 1.
+Started up at: Tue Nov 18 20:58:04 2014
+World opened on network port 1.
+Started up at: Tue Nov 18 21:20:16 2014
+runtime error: bad icon operation
+proc name: Blend (/icon/proc/Blend)
+  usr: Aregb (/mob/PC)
+  src: /icon (/icon)
+  call stack:
+/icon (/icon): Blend(null, null, 1, 1)
+Aregb (/mob/PC): Skill Gain()
+Aregb (/mob/PC): Level Up()
+World opened on network port 1.
+Started up at: Tue Nov 18 21:25:23 2014
+Tue Nov 18 21:35:22 2014
+World opened on network port 1.
+Started up at: Tue Nov 18 21:35:37 2014
+World opened on network port 1.
+Started up at: Tue Nov 18 21:45:52 2014
+World opened on network port 1.
+Started up at: Tue Nov 18 21:56:06 2014
+Started up at: Tue Nov 18 23:24:00 2014
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Kishi Jr. (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=16;icon-y=16;left=1;scr...")
+runtime error: bad client
+proc name: Click (/obj/LoginStuff/Slot1New/Click)
+  source file: New Login.dm,266
+  usr: Master Alien (/mob/Guest)
+  src:  (/obj/LoginStuff/Slot1New)
+  call stack:
+ (/obj/LoginStuff/Slot1New): Click(null, "mappane.map", "icon-x=18;icon-y=12;left=1;scr...")
+World opened on network port 50304.
